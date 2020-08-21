@@ -1,0 +1,54 @@
+<!doctype html>
+<head>
+    <title>Apocalypse Survival Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/symbol.jpg">
+    <meta charset="UTF-8">
+    <script>
+        setInterval(imgChanger,2000);
+        
+        var imgs =  ["images/waterfall1.jpg","images/waterfall2.jfif"];
+        var i = 0;
+        var answers = ['Duck and Roll','climb a tree','Evacuate Bowels'];
+        function testing(){
+            var rand = Math.floor(math.random()*answers.length);
+                
+            document.getElementById('text').innerHTML = answers[rand];
+        }
+        
+        var i = 0;
+        
+        function imgChanger(){
+            document.getElementById('imgSlide').src = imgs[1];
+            i++;
+            if(i > 2){
+               i = 0;
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="main">
+        <h1>Apocalypse Survival Guide</h1>
+        <nav>
+            <a href="index.html">Info/Homepage</a>
+            <a href="Survive.html">The Alpha Predators</a>
+            <a href="zone.html">Safe Zones</a>
+        </nav>
+        <img id="imgSlide" src="images/waterfall1.jpg" alt="images/waterfall">
+        <div class="box3">
+            <p>There are not many safe Zones left in the world due to the sudden decline of humans in the food cycle. All locations outside of New Europe are known to be extremely unsafe for humans to be as Elo-Gorilla's and Gorilla-Elo's now roam the lands or Africa, Asia, Oceania, South America and North America. With the exception of a town in Western Michigan in United States where there are supposedly a few thousand people still there.
+            </p>
+            
+
+        </div>
+        <div class="box4">
+            <p>If you are in need of somewhere safe to be make sure you make your way to the New Europe region which is showcased on the info/homepage. Perferrably you should come to Nor-Fed as this is where Legion is mainly based, and you are near guarenteened safety as we have resorted to living around the various waterfalls in Norway.</p>
+        </div>
+        
+    <p class="bottom">Our main Waterfall outposts.</p>
+    </div>
+</body>
+
